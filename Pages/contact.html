@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>EADG Luthier Services</title>
+</head>
+<body style="background-color:rgb(246, 237, 237); font-family: 'Courier New', Courier, monospace;">
+  
+<!-- nav start -->
+<nav class="navbar navbar-expand-lg bg-dark-subtle sticky-top">
+  <div class="container-fluid">
+		<a href="../index.html">
+		<img src="/images/logo-1.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top rounded-circle" id="logo-2">
+		</a>
+    <a class="navbar-brand ps-2 d-none d-sm-block" href="#" style="font-size: x-large;"> EADG Bass Luthier</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <a class="nav-link active" aria-current="page" href="/index.html" style="font-size: large;">Home</a>
+        <a class="nav-link active" aria-current="page" href="/pages/services.html" style="font-size: large;">Services</a>
+        <a class="nav-link active" aria-current="page" href="/pages/contact.html" style="font-size: large;">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- nav end -->
+
+<!-- image header start -->
+<div class="container-item">
+  <div class="img-fluid position-relative">
+    <img src="/images/img service 2.jpg" class="d-flex w-100 h-25" alt="bass guitar" style="opacity: .8;">
+    <div class="overlay position-absolute top-50 start-50 translate-middle">
+      <h1 class="text-center text-white fw-bold">Book Now</h1>
+    </div>
+  </div>
+</div>
+<!-- image header end -->
+
+<!-- contact start -->
+	<div class="container-fluid">
+		<div class="row d-flex my-5">
+				<div class="col-md-6 col-sm-12 col-xs-12 bg-dark-subtle p-4" style="height: 500px;">
+					<form onsubmit="return validateForm()">
+						<div class="section-title">
+							<h5 class="fw-bold">Select your schedule</h5>
+						</div>
+						<div class="form-group mt-4">
+							<input class="form-control" placeholder="Fisrt Name" type="text" name="first_name" autocomplete="given-name" required>
+						</div>
+						<div class="form-group mt-4">
+							<input class="form-control" placeholder="Last Name" type="text" name="lastt_name" autocomplete="family-name" required>
+						</div>
+						<div class="form-group mt-4">
+							<label for="mobile_number">Mobile Number:</label>
+							<div class="input-group">
+									<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">+63</span>
+									</div>
+									<input class="form-control" placeholder="123-456-7890" type="number" name="Mobile_number" id="mobile_number" autocomplete="tel" required>
+							</div>
+						</div>											
+						<div class="form-group mt-4">
+							<label for="mobile_number">Phone Number:</label>
+							<div class="input-group">
+									<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">+63</span>
+									</div>
+									<input class="form-control" placeholder="123-456-7890" type="number" name="Phone_number" id="phone_number" autocomplete="tel" required>
+							</div>
+						</div>
+						<div class="form-group mt-4">
+							<label for="preferred_datetime">Preferred Date and Time:</label>
+							<input class="form-control" type="datetime-local" name="preferred_datetime" id="preferred_datetime" required>
+						</div>
+						<button class="btn bg-dark text-light px-4 my-4" type="submit">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 bg-dark text-light p-4">
+					<h5 class="fw-bold">Location</h5>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30916.94361358403!2d120.81451311083981!3d14.391502700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962d74c4ba01fb%3A0xfc5d27fdeef2731c!2sSM%20City%20Tanza!5e0!3m2!1sen!2sph!4v1700527176530!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+</div>
+	<!--contact end  -->
+
+<!-- footer start -->
+<div class="container-footer bg-dark">
+  <footer class="py-5">
+    <ul class="nav justify-content-center mt-3">
+      <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-light">Home</a></li>
+      <li class="nav-item"><a href="/pages/services.html" class="nav-link px-2 text-light">Services</a></li>
+      <li class="nav-item"><a href="/pages/contact.html" class="nav-link px-2 text-light">Contact</a></li>
+      <li class="nav-item"><a href="../index.html#about" class="nav-link px-2 text-light">About</a></li>
+    </ul>
+    <p class="text-center text-light">© EADG Bass Luthier 2023</p>
+  </footer>
+</div>
+<!-- footer end -->
+
+<button id="scrollUpBtn" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="/js/m.js"></script>
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
