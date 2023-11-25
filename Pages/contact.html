@@ -46,40 +46,50 @@
 	<div class="container-fluid">
 		<div class="row d-flex my-5">
 				<div class="col-md-6 col-sm-12 col-xs-12 bg-dark-subtle p-4" style="height: 500px;">
-					<form onsubmit="return validateForm()">
-						<div class="section-title">
-							<h5 class="fw-bold">Select your schedule</h5>
-						</div>
-						<div class="form-group mt-4">
-							<input class="form-control" placeholder="Fisrt Name" type="text" name="first_name" autocomplete="given-name" required>
-						</div>
-						<div class="form-group mt-4">
-							<input class="form-control" placeholder="Last Name" type="text" name="lastt_name" autocomplete="family-name" required>
-						</div>
-						<div class="form-group mt-4">
-							<label for="mobile_number">Mobile Number:</label>
-							<div class="input-group">
-									<div class="input-group-prepend">
-											<span class="input-group-text" id="basic-addon1">+63</span>
-									</div>
-									<input class="form-control" placeholder="123-456-7890" type="number" name="Mobile_number" id="mobile_number" autocomplete="tel" required>
-							</div>
-						</div>											
-						<div class="form-group mt-4">
-							<label for="mobile_number">Phone Number:</label>
-							<div class="input-group">
-									<div class="input-group-prepend">
-											<span class="input-group-text" id="basic-addon1">+63</span>
-									</div>
-									<input class="form-control" placeholder="123-456-7890" type="number" name="Phone_number" id="phone_number" autocomplete="tel" required>
-							</div>
-						</div>
-						<div class="form-group mt-4">
-							<label for="preferred_datetime">Preferred Date and Time:</label>
-							<input class="form-control" type="datetime-local" name="preferred_datetime" id="preferred_datetime" required>
-						</div>
-						<button class="btn bg-dark text-light px-4 my-4" type="submit">Submit</button>
-					</form>
+					<form onsubmit="return validateForm()" name="scheduleForm" action="/submit-form" method="post">
+						<fieldset>
+								<legend>Select your schedule</legend>
+				
+								<div class="form-group mt-4">
+										<label for="first_name">First Name:</label>
+										<input class="form-control" placeholder="First Name" type="text" name="firstName" id="first_name" autocomplete="given-name" required>
+								</div>
+				
+								<div class="form-group mt-4">
+										<label for="last_name">Last Name:</label>
+										<input class="form-control" placeholder="Last Name" type="text" name="lastName" id="last_name" autocomplete="family-name" required>
+								</div>
+				
+								<div class="form-group mt-4">
+										<label for="mobile_number">Mobile Number:</label>
+										<div class="input-group">
+												<div class="input-group-prepend">
+														<span class="input-group-text" id="basic-addon1">+63</span>
+												</div>
+												<input class="form-control" placeholder="123-456-7890" type="tel" name="mobileNumber" id="mobile_number" autocomplete="tel" required>
+										</div>
+								</div>
+				
+								<div class="form-group mt-4">
+										<label for="phone_number">Phone Number:</label>
+										<div class="input-group">
+												<div class="input-group-prepend">
+														<span class="input-group-text" id="basic-addon1">+63</span>
+												</div>
+												<input class="form-control" placeholder="123-456-7890" type="tel" name="phoneNumber" id="phone_number" autocomplete="tel" required>
+										</div>
+								</div>
+				
+								<div class="form-group mt-4">
+										<label for="preferred_datetime">Preferred Date and Time:</label>
+										<input class="form-control" type="datetime-local" name="preferredDatetime" id="preferred_datetime" required>
+								</div>
+				
+								<button class="btn bg-dark text-light px-4 my-4" type="submit">Submit</button>
+						</fieldset>
+				</form>
+				
+
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 bg-dark text-light p-4">
 					<h5 class="fw-bold">Location</h5>
