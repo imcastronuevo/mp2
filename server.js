@@ -25,7 +25,7 @@ app.get('/services', (req, res) => {
     res.sendFile(path.join(__dirname, 'services.html'));
 });
 
-// Replace the connection string with your MongoDB Atlas connection string
+
 const mongoURI = 'mongodb+srv://imcastronuevo:sAR880chSW0r1XSc@cluster0.vtj4bqe.mongodb.net/?retryWrites=true&w=majority';
 
 // Connect to MongoDB Atlas
@@ -33,7 +33,7 @@ mongoose.connect(mongoURI);
 
 const db = mongoose.connection;
 
-// Create a MongoDB schema and model for the form data
+// schema and model 
 const formDataSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
