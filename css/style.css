@@ -1,8 +1,8 @@
 #scrollUpBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
   font-size: 20px;
   padding: 15px;
   border: none;
