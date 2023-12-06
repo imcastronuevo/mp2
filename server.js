@@ -1,4 +1,3 @@
-// server.js
 require('dotenv').config();
 
 const express = require('express');
@@ -12,13 +11,13 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Use the MongoDB connection from database.js
-const mongooseConnection = connectToDatabase();  // Call the function to establish the connection
+// MongoDB connection from database.js
+const mongooseConnection = connectToDatabase();
 
-// Serve static files from the root directory
+// Static file
 app.use(express.static(__dirname));
 
-// Define your routes
+// routes
 app.use('/', routes);
 
 const FormData = require('./models/formData');
