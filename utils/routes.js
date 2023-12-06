@@ -17,7 +17,7 @@ router.get('/services', (req, res) => {
 });
 
 // New route for form submission
-router.post('https://mp2-ian-michael-castronuevos-projects.vercel.app/submit-form', (req, res) => {
+router.post(`https://mp2-ian-michael-castronuevos-projects.vercel.app/submit-form`, (req, res) => {
     const formData = new FormData(req.body);
 
     formData.save()
