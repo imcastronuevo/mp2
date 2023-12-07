@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const mongoURI = process.env.MONGO_URI;
+// const mongoURI = process.env.MONGO_URI;
+
+const mongoURI = "mongodb+srv://vercel-admin-user-6571a0bccd87993af35d9e36:28Rms96BerxTtczv@cluster0.vtj4bqe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 function connectToDatabase() {
     const mongooseOptions = {
