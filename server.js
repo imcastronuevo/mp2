@@ -6,7 +6,7 @@ const routes = require('./utils/routes');
 const connectToDatabase = require('./utils/database');
 
 const app = express();
-const port = process.env.PORT || 3000; // Use the provided port or default to 3000
+const port = process.env.PORT || 3000; // Use the provided port
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
