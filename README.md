@@ -1,7 +1,7 @@
-#Bass Guitar Repair Service Website - (Mini Project 2)
+# Bass Guitar Repair Service Website - (Mini Project 2)
 This is a business website for a bass guitar repair service, built using Node.js and MongoDB Atlas for database management.
 
-#Project Structure
+# Project Structure
 The project structure includes the following folders:
 
 css: Contains stylesheets for the website.
@@ -15,14 +15,14 @@ server.js: Main server file.
 index.html: Root HTML file.
 package.json: Configuration file with project metadata and dependencies.
 
-#Technologies Used
+# Technologies Used
 Node.js: Used for server-side scripting and handling HTTP requests.
 MongoDB Atlas: Cloud-based database service for storing and managing data.
 HTML
 CSS
 Bootstrap 5
 
-#Getting Started
+# Getting Started
 Clone the repository:
 
 bash
@@ -37,7 +37,7 @@ bash
 node server.js
 Open your web browser and navigate to http://localhost:3000 to view the website.
 
-#Additional Information
+# Additional Information
 The root page is index.html.
 The package.json file contains project details and dependencies.
 Server-side logic is implemented in server.js.
