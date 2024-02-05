@@ -1,1 +1,21 @@
+# Business Website - Mini Project 2
+
+A simple business website showcasing basic pages for home, about, services, and contact. Built with HTML, CSS, and Bootstrap 5. With backend integration using MonggoDB Atlas for the form which is still under development.
+
+## Usage
+
+Open the `index.html` file in a web browser to explore the website. The pages include:
+
+- **Home:** The main landing page.
+- **About:** Information about the school.
+- **Services:** Details about the services offered.
+- **Contact:** Contact information and form submission for booking appointment
+
+## Technologies Used
+
+- HTML
+- CSS
+- Bootstrap 5
+- node.js
+- MonggoDB Atlas
 
